@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Among Us Helper</title>
+        <link rel="icon" href="./among_us.png" style="border-radius: 50%;">
+        <meta charset="UTF-8">
+        <meta name="author" content="Oliver Seman">
+        <meta name="description" content="Among us discord bot that helps you moderate mutes of voice channel where you play among us, also able to store game codes">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:title" content="Among Us Helper">
+        <meta property="og:description" content="Among us discord bot that helps you moderate mutes of voice channel where you play among us, also able to store game codes">
+        <meta name="keywords" content="Among, Us, Helper, discord, bot">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <header>
+            <h1 style="text-align: center;">Among Us Helper</h1>
+            <img src="./among_us.png" class="icon" width="75px" alt="Among Us Helper icon">
+            <br><hr>
+        </header>
+        <main>
+            <p>Among us discord bot that helps you moderate mutes of voice channel where you play among us, also able to store game codes</p>
+            <p>prefix: <code>a!</code></p>
+            <br>
+            <p>VC = voice channel</p>
+            <table>
+                <thead>
+                    <tr class="headRow">
+                        <th>Command</th>
+                        <th>Description</th>
+                        <th>Required permissions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>a!start</td>
+                        <td>Start an among us game(mutes everyone in VC)</td>
+                        <td>Role "Among mod"</td>
+                    </tr>
+                    <tr>
+                        <td>a!end</td>
+                        <td>End an among us game(Unmutes and revive everyone in VC)</td>
+                        <td>Role "Among mod"</td>
+                    </tr>
+                    <tr>
+                        <td>a!vote</td>
+                        <td>Starts voting(Unmutes everyone in VC except dead people)</td>
+                        <td>Role "Among mod"</td>
+                    </tr>
+                    <tr>
+                        <td>a!endvote</td>
+                        <td>Ends voting(Mutes everyone in VC and continues in game)</td>
+                        <td>Role "Among mod"</td>
+                    </tr>
+                    <tr>
+                        <td>a!kill &lt;user&gt;</td>
+                        <td>Set someone as dead in game(He won't get unmuted during voting)</td>
+                        <td>Role "Among mod"</td>
+                    </tr>
+                    <tr>
+                        <td>a!revive &lt;user&gt;</td>
+                        <td>Revive someone(Reverse of kill command)</td>
+                        <td>Role "Among mod"</td>
+                    </tr>
+                    <tr>
+                        <td>a!leave</td>
+                        <td>Leave game and VC(You will get unmuted and disconnected from VC)</td>
+                        <td>-----</td>
+                    </tr>
+                    <tr>
+                        <td>a!code [code]</td>
+                        <td>Set code for your voice channel, do not specify code to remove code from your voice channel</td>
+                        <td>-----</td>
+                    </tr>
+                    <tr>
+                        <td>a!codes</td>
+                        <td>View codes that are set in your guild</td>
+                        <td>-----</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br><br>
+            <h3 style="text-align: center;">Other features:</h3>
+            <p>When user joines a channel with active among us game, he gets muted. When user moves from among us channel to another channel, he gets unmuted(not if he leaves, he must use a!leave command or move to another voice channel.)</p>
+            <br><hr>
+        </main>
+        <footer>
+            <br>
+            <p style="font-size: large;">If you like my job, you can support me on <a href="https://www.paypal.me/olse9" target="_blank">PayPal</a></p>
+            <p style="float: right;">Made by OLSE9#9999</p>
+        </footer>
+    </body>
+</html>
