@@ -13,6 +13,23 @@
         <link rel="stylesheet" href="./style.css">
     </head>
     <body>
+        <style>
+            .footerButton {
+    background-color: black;
+    color: olivedrab;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 24px;
+    border-radius: 6px;
+    border: 2px solid olivedrab;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    transition-duration: 350ms;
+}
+
+.footerButton:hover {
+    background-color: #333333;
+}
+        </style>
         <header>
             <h1 style="text-align: center;">Among Us Helper</h1>
             <img src="./among_us.png" class="icon" width="75px" alt="Among Us Helper icon">
@@ -99,6 +116,7 @@
         </main>
         <footer>
             <br>
+            <button class="footerButton" id="inviteButton" onclick="window.location.href='https://discord.com/oauth2/authorize?client_id=707635354026639372&amp;scope=bot&amp;permissions=8'">Invite bot!</button>
             <p style="float: right;">Made by OLSE9#9999</p>
         </footer>
     </body>
